@@ -11,36 +11,36 @@ FILE *ouput_archivo_extendido;
 [a-z][a-zA-Z0-9]{0,10}	{fprintf(yyout, "%s", yytext);}
 -?[0-9]{0,10}			{fprintf(yyout, "%s", yytext);}
 -?[0-9]+\.[0-9]+		{fprintf(yyout, "%s", yytext);}
-\'[^\']*\'				{fprintf(yyout, "%s", yytext);}
+\'[^\']*\'			{fprintf(yyout, "%s", yytext);}
 [\[\]\{\}\$]			{fprintf(yyout, "%s", yytext);}
-"+"						{fprintf(yyout, " sumar ");}
-" - "					{fprintf(yyout, " restar ");}
-"*"						{fprintf(yyout, " multiplicar ");}
-"/"						{fprintf(yyout, " dividir ");}
-"%"						{fprintf(yyout, " modulo ");}
-"&"						{fprintf(yyout, " operadorlogico_y ");}
-"|"						{fprintf(yyout, " operadorlogico_o ");}
-"!"						{fprintf(yyout, " operadorlogico_diferente ");}
-"==="   				{fprintf(yyout, " igual ");}
-"="  					{fprintf(yyout, " equivale_a ");}
-"!="					{fprintf(yyout, " diferente ");}
-"<"						{fprintf(yyout, " menor ");}
-"<="					{fprintf(yyout, " menor_igual ");}
-">"						{fprintf(yyout, " mayor ");}
-">="					{fprintf(yyout, " mayor_igual ");}
-"if "					{fprintf(yyout, " condicional_si ");}
-"for "					{fprintf(yyout, " condicional_para ");}
-"while "				{fprintf(yyout, " condicional_mientras" );}
-"else "					{fprintf(yyout, " de_otro_modo ");}
-"elif "					{fprintf(yyout, " condicional_sino ");}
-"function "				{fprintf(yyout, " funcion ");}
-"class "				{fprintf(yyout, " clase ");}
-"var "					{fprintf(yyout, " declaracion_variable ");}
-"print "				{fprintf(yyout, " imprimir ");}
-"input "				{fprintf(yyout, " leer ");}
-"return "				{fprintf(yyout, " retornar ");}
-[\n]					{fprintf(yyout, "\n");}
-[ \t]					{ /* Ignorar tabulaciones */ }
+"+"				{fprintf(yyout, " sumar ");}
+" - "				{fprintf(yyout, " restar ");}
+"*"				{fprintf(yyout, " multiplicar ");}
+"/"				{fprintf(yyout, " dividir ");}
+"%"				{fprintf(yyout, " modulo ");}
+"&"				{fprintf(yyout, " operadorlogico_y ");}
+"|"				{fprintf(yyout, " operadorlogico_o ");}
+"!"				{fprintf(yyout, " operadorlogico_diferente ");}
+"==="   			{fprintf(yyout, " igual ");}
+"="  				{fprintf(yyout, " equivale_a ");}
+"!="				{fprintf(yyout, " diferente ");}
+"<"				{fprintf(yyout, " menor ");}
+"<="				{fprintf(yyout, " menor_igual ");}
+">"				{fprintf(yyout, " mayor ");}
+">="				{fprintf(yyout, " mayor_igual ");}
+"if "				{fprintf(yyout, " condicional_si ");}
+"for "				{fprintf(yyout, " condicional_para ");}
+"while "			{fprintf(yyout, " condicional_mientras" );}
+"else "				{fprintf(yyout, " de_otro_modo ");}
+"elif "				{fprintf(yyout, " condicional_sino ");}
+"function "			{fprintf(yyout, " funcion ");}
+"class "			{fprintf(yyout, " clase ");}
+"var "				{fprintf(yyout, " declaracion_variable ");}
+"print "			{fprintf(yyout, " imprimir ");}
+"input "			{fprintf(yyout, " leer ");}
+"return "			{fprintf(yyout, " retornar ");}
+[\n]				{fprintf(yyout, "\n");}
+[ \t]				{ /* Ignorar tabulaciones */ }
 %%
 
 /** Seccion de codigo de usuario **/
