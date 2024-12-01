@@ -1,0 +1,51 @@
+ clase {
+ declaracion_variable numero1 equivale_a -43$
+ declaracion_variable caracter equivale_a 'Hola mundo'$
+ declaracion_variable numeroFlotante equivale_a -35.6$
+
+ declaracion_variable a equivale_a 2$
+ declaracion_variable b equivale_a 3$
+
+ declaracion_variable suma equivale_a a sumar b$
+ declaracion_variable resta equivale_a 1.5 restar 8$
+ declaracion_variable multiplicacion equivale_a 5 multiplicar 9$
+ declaracion_variable division equivale_a 4 dividir 7$
+ declaracion_variable moduloo equivale_a 6 modulo 6$
+ declaracion_variable ingresarString equivale_a  leer ['Ingresar string']$
+
+ condicional_para [ declaracion_variable  equivale_a i$i menor 5$i sumar  sumar ]{
+ condicional_si [i mayor 0 operadorlogico_y i menor 4]{
+ imprimir ['bien']$
+} condicional_sino [i igual 1 operadorlogico_o  operadorlogico_diferente [i diferente 3]]{
+ imprimir ['mal']$
+} de_otro_modo {
+ retornar 1$
+}
+}
+
+ condicional_mientras[5 menor 10]{
+ condicional_mientras[6 mayor 7]{
+ imprimir ['adios']$
+}
+}
+
+ funcion restarNumeros[a,b]{
+ declaracion_variable multiply equivale_a [a,b] equivale_a  mayor {
+
+ retornar a multiplicar b$
+}
+
+ retornar multiply[a,b]$
+}
+
+ funcion sumarNumeros[a,b]{
+ condicional_si [a mayor_igual b]{
+ imprimir ['El parametro a no es mayor o igual que b']$
+} condicional_sino [a menor_igual b]{
+ imprimir ['El parametro no es menor o igual que b']$
+} de_otro_modo {
+ retornar 0$
+}
+}
+
+}

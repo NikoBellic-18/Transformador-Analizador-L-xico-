@@ -1,0 +1,51 @@
+class {
+var numero1 = -43$
+var caracter = 'Hola mundo'$
+var numeroFlotante = -35.6$
+
+var a = 2$
+var b = 3$
+ 
+var suma = a + b$
+var resta = 1.5 - 8$
+var multiplicacion = 5 * 9$
+var division = 4 / 7$
+var moduloo = 6 % 6$
+var ingresarString = input ['Ingresar string']$
+
+for [var = i$ i < 5$ i++]{
+	if [i > 0 & i < 4]{
+		print ['bien']$
+	}elif [i === 1 | ![i != 3]]{
+		print ['mal']$
+	}else {
+		return 1$	
+	}
+}
+
+while [5 < 10]{
+	while [6 > 7]{
+		print ['adios']$
+	}
+}
+
+function restarNumeros[a,b]{
+	var multiply = [a,b] => {
+
+		return a * b$
+	}
+
+	return multiply[a,b]$
+}
+
+function sumarNumeros [a, b]{
+	if [a >= b]{
+		print ['El parametro a no es mayor o igual que b']$
+	}elif [a <= b]{
+		print ['El parametro no es menor o igual que b']$
+	}else {
+		return 0$
+	}
+}
+
+}
